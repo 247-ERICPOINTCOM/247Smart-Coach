@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="makeTraining.css" />
+    <!-- icon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Training</title>
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <!-- name -->
+      <div class="logo-details">
+        <span class="logo_name">247Smart Coach</span>
+      </div>
+      <!-- serach box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <i class="bx bx-search"></i>
+      </div>
+      <!-- navigation links -->
+      <h2>Control</h2>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html" class="active">
+            <i class="bx bxs-dashboard"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="coachList.html">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Coach Lists</span>
+          </a>
+        </li>
+        <li>
+          <a href="makeTraining.html">
+            <i class="bx bx-run"></i>
+            <span class="links_name"> Make Training</span>
+          </a>
+        </li>
+        <li>
+          <a href="games.html">
+            <i class="bx bx-basketball"></i>
+            <span class="links_name">Games</span>
+          </a>
+        </li>
+        <li>
+          <a href="allTrainingKit.html">
+            <i class="bx bx-coin-stack"></i>
+            <span class="links_name">All Training Kit</span>
+          </a>
+        </li>
+        <li>
+          <a href="chooseTrainingKit.html">
+            <i class="bx bx-paper-plane"></i>
+            <span class="links_name">Choose Training Kit</span>
+          </a>
+        </li>
+        <li>
+          <a href="trainingDrill.html">
+            <i class="bx bx-calendar"></i>
+            <span class="links_name">Training Drill</span>
+          </a>
+        </li>
+        <li>
+          <a href="trash.html">
+            <i class="bx bx-trash"></i>
+            <span class="links_name">Trash</span>
+          </a>
+        </li>
+        <h2>System</h2>
+        <li>
+          <a href="settings.html">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Profile</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.html">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <!-- home content -->
+      <h1 class="title">Make Training</h1>
+      <div class="home-content">
+        <!-- overview boxes -->
+        <div class="overview-boxes">
+          <!-- first box -->
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Performance Rate</div>
+              <div class="time">Daily</div>
+              <div class="number">80%</div>
+            </div>
+            <i class="bx bxs-doughnut-chart bx-rotate-270"></i>
+          </div>
+          <!-- second box -->
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Training Rate</div>
+              <div class="time">Daily</div>
+              <div class="number">90%</div>
+            </div>
+            <i class="bx bxs-doughnut-chart bx-rotate-270 two"></i>
+          </div>
+          <!-- third box -->
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Kit Usage Rate</div>
+              <div class="time">Daily</div>
+              <div class="number">50%</div>
+            </div>
+            <i class="bx bxs-doughnut-chart bx-rotate-270 three"></i>
+          </div>
+          <!-- fourth box -->
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Performance Rate</div>
+              <div class="time">Weekly</div>
+              <div class="number">70%</div>
+            </div>
+            <i class="bx bxs-doughnut-chart bx-rotate-270 four"></i>
+          </div>
+        </div>
+        <!-- make training content -->
+        <div class="make-training">
+          <h2 class="make-training-title">Make Training</h2>
+          <h3 class="make-training-info">Make Training for Players</h3>
+          <table class="make-training-players">
+            <tr>
+              <th>Make Training</th>
+            </tr>
+            <tr>
+              <td>for all players</td>
+            </tr>
+            <tr>
+              <td>Choose a player</td>
+            </tr>
+          </table>
+          <table class="selected-list">
+            <tr>
+              <th>Selected List</th>
+            </tr>
+            <tr>
+              <td>Selected List for the next match</td>
+            </tr>
+            <tr>
+              <td>Previous Lists</td>
+            </tr>
+          </table>
+        </div>
+    </section>
+      <!-- profile details -->
+      <nav>
+        <div class="profile-details">
+          <a href="#" class="profile-button" id="profile-button">
+            <div class="profile-pic">
+              <i class="bx bxs-user-circle"></i>
+            </div>
+            <span class="admin_name">Coach</span>
+          </a>
+        </div>
+        <!-- popup info -->
+        <div class="popup">
+          <div class="popup-content">
+            <img src="images\close.png" alt="Close" class="close" />
+            <a href="#" class="button"></a>
+            <h1 class="profile-edit">Edit Your Profile</h1>
+            <h2 class="personal-info">Personal Information</h2>
+            <a href="#" class="photo-upload" id="photo-upload">Upload Photo</a>
+            <input
+              type="text"
+              class="full-name"
+              placeholder="Enter your full name"
+            />
+            <input type="email" class="email" placeholder="Enter your email" />
+            <input
+              type="password"
+              class="password"
+              placeholder="Enter your password"
+            />
+            <input
+              type="password"
+              class="re-password"
+              placeholder="Re-enter your password"
+            />
+            <div class="enter-bd">Enter your birthday</div>
+            <input
+              type="date"
+              class="birthday"
+              placeholder="Enter your birthday"
+            />
+            <input
+              type="number"
+              class="phone-number"
+              placeholder="Enter your phone number"
+            />
+            <input type="text" class="address" placeholder="Enter your address" />
+            <h2 class="health-info">Health Information</h2>
+          </div>
+        </div>
+        <!-- reactive popup js -->
+        <script>
+          document
+            .getElementById("profile-button")
+            .addEventListener("click", function () {
+              document.querySelector(".popup").style.display = "flex";
+            });
+          document.querySelector(".close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+          });
+        </script>
+      </nav>
+
+  </body>
+</html>
